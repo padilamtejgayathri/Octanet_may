@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            width: 80%;
+            margin: auto;
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            display: absolute;
+        }
+        nav ul li {
+            list-style: none;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 5px 10px;
+            color: black;
+            font-size: 20px;
+            position: relative;
+            
+        }
+        nav ul li a::before {
+            content: "";
+            width: 0;
+            height: 3px;
+            position: absolute;
+            background-color: rgb(34, 105, 34);
+            top: -50%;
+            left: 0;
+            transition: 0.4s linear;
+        }
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+        .Container {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(15, 75, 41, 0.7)), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.alamy.com%2Fstock-photo%2Fnatural-logo.html&psig=AOvVaw063ae055UfLQrMFUKvNfAN&ust=1715332225209000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIjO3-ScgIYDFQAAAAAdAAAAABAE") no-repeat center center/cover;
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0%, 100% 70%, 50% 55%, 0 70%);
+            transition: 0.5s linear;
+        }
+        .Container:hover {
+            clip-path: polygon(0 0, 100% 0%, 100% 60%, 50% 75%, 0 60%);
+        }
+        .text-box {
+            text-align: center;
+            padding-top: 80px;
+            color: white;
+        }
+        .text-box a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid white;
+            font-weight: bold;
+        }
+        .text-box h1,
+        .text-box h4 {
+            margin-bottom: 50px;
+        }
+        .card {
+            display: flex;
+            width: 60%;
+            margin: auto;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .card .col {
+            width: 230px;
+            height: 270px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+            transition: 0.2s linear;
+        }
+        .card .col:hover {
+            transform: translateY(-5px);
+        }
+        .card .col img {
+            width: 100%;
+            object-fit: cover;
+            height: 60%;
+        }
+        .card .col h1,
+        .card .col p {
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://media.istockphoto.com/id/485371557/photo/twilight-at-spirit-island.jpg?s=1024x1024&w=is&k=20&c=BaIpHy3fW9u6WP-QK4ApQNuzsKrjKrF7sXjQwRWVZ8E=">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nature</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Container">
+        <div class="text-box">  
+        <img src="https://raw.githubusercontent.com/Kirti-salunkhe/nature.github.io/46d8106578fa252444ab08cdb2ad9f7073984a1a/naturelogo.png">
+            <h1>Look Deep Into Nature</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, dignissimos similique minus fugit.</h4>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+    <div class="card">
+        <div class="col">
+            <img src="https://images.pexels.com/photos/6527068/pexels-photo-6527068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    <div class="card">
+        <div class="col">
+            <img src="https://th.bing.com/th/id/OIP.aNhjlSIAdq1o7IVlDM8LjQHaEo?rs=1&pid=ImgDetMain">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="col">
+            <img src="https://media.istockphoto.com/id/1161350279/photo/fairy-pools-glen-brittle-isle-of-skye-scotland-uk.jpg?s=1024x1024&w=is&k=20&c=RehgGf6AJGRmhIWIZRVxyXDYlLPlBvugBmI_WGq3HxY=">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+</body>
+</html>
